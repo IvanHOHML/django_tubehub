@@ -1,0 +1,12 @@
+<h2>Enter URL of the Youtube Playlist</h2>
+<body>This site is for educational purpose.</body>
+
+<div class="column is-one-third">
+    <form method="post">
+        {% csrf_token %}
+        {{form.url}}
+        <button class="button is-success is-fullwidth is-medium mt-5"
+                type="submit">Download
+        </button>
+    </form>
+</div>
