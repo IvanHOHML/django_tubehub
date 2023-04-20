@@ -118,3 +118,1048 @@ INFO 2023-04-18 17:34:19,026 55583 200 - The Youtube Playlist has been downloade
 INFO 2023-04-18 17:34:19,026 55583 Location of zip file - /Users/hoivan/Tech/django_youtube_mp3/song/output/TubeHubPlaylist.zip
 INFO 2023-04-18 17:34:19,026 55583 Server will now return the File Response to Client to download compressed dir.
 INFO 2023-04-18 17:34:19,110 55583 "POST /song/ HTTP/1.1" 200 9643282
+INFO 2023-04-20 08:55:10,001 8357 Watching for file changes with StatReloader
+INFO 2023-04-20 08:55:48,027 8378 Watching for file changes with StatReloader
+INFO 2023-04-20 08:56:02,401 8386 Watching for file changes with StatReloader
+WARNING 2023-04-20 08:56:09,467 8386 Not Found: /
+WARNING 2023-04-20 08:56:09,467 8386 "GET / HTTP/1.1" 404 2176
+WARNING 2023-04-20 08:56:09,525 8386 Not Found: /favicon.ico
+WARNING 2023-04-20 08:56:09,526 8386 "GET /favicon.ico HTTP/1.1" 404 2227
+INFO 2023-04-20 08:57:47,165 8386 /Users/hoivan/Tech/django_youtube_mp3/django_youtube_mp3/urls.py changed, reloading.
+INFO 2023-04-20 08:57:47,456 8423 Watching for file changes with StatReloader
+INFO 2023-04-20 08:58:27,107 8423 /Users/hoivan/Tech/django_youtube_mp3/django_youtube_mp3/urls.py changed, reloading.
+INFO 2023-04-20 08:58:27,325 8441 Watching for file changes with StatReloader
+INFO 2023-04-20 08:58:30,411 8441 /Users/hoivan/Tech/django_youtube_mp3/django_youtube_mp3/urls.py changed, reloading.
+INFO 2023-04-20 08:58:30,618 8444 Watching for file changes with StatReloader
+INFO 2023-04-20 08:59:03,731 8465 Watching for file changes with StatReloader
+INFO 2023-04-20 08:59:15,567 8477 Watching for file changes with StatReloader
+INFO 2023-04-20 08:59:29,264 8487 Watching for file changes with StatReloader
+INFO 2023-04-20 08:59:31,012 8487 "GET / HTTP/1.1" 200 629
+INFO 2023-04-20 09:04:47,132 8487 "GET / HTTP/1.1" 200 629
+INFO 2023-04-20 09:05:17,843 8538 Watching for file changes with StatReloader
+INFO 2023-04-20 09:05:19,630 8538 "GET / HTTP/1.1" 200 629
+INFO 2023-04-20 09:05:22,945 8538 "GET / HTTP/1.1" 200 629
+INFO 2023-04-20 09:05:23,562 8538 "GET / HTTP/1.1" 200 629
+INFO 2023-04-20 09:29:37,551 8718 Creating database entry to record this request.
+INFO 2023-04-20 09:29:37,552 8718 Completed - Database entry creation.
+INFO 2023-04-20 09:29:37,552 8718 Cleaning up output dir.
+INFO 2023-04-20 09:29:37,554 8718 Completed - Directory clean up.
+INFO 2023-04-20 09:29:37,554 8718 Downloading all songs in playlist through PyTube services.
+ERROR 2023-04-20 09:29:37,554 8718 'list'
+WARNING 2023-04-20 16:27:28,650 8538 Session data corrupted
+ERROR 2023-04-20 16:27:28,667 8538 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/hoivan/Tech/django_youtube_mp3/song/views.py", line 31, in index
+    return render(request,"song/song.html",context)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 19: 'static'. Did you forget to register or load this tag?
+ERROR 2023-04-20 16:27:28,668 8538 "GET / HTTP/1.1" 500 128513
+WARNING 2023-04-20 16:28:19,362 8538 Session data corrupted
+ERROR 2023-04-20 16:28:19,385 8538 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/hoivan/Tech/django_youtube_mp3/song/views.py", line 31, in index
+    return render(request,"song/song.html",context)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 19: 'static'. Did you forget to register or load this tag?
+ERROR 2023-04-20 16:28:19,386 8538 "GET / HTTP/1.1" 500 128501
+WARNING 2023-04-20 16:29:44,423 8538 Session data corrupted
+ERROR 2023-04-20 16:29:44,451 8538 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/hoivan/Tech/django_youtube_mp3/song/views.py", line 31, in index
+    return render(request,"song/song.html",context)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 19: 'static'. Did you forget to register or load this tag?
+ERROR 2023-04-20 16:29:44,452 8538 "GET / HTTP/1.1" 500 128513
+INFO 2023-04-20 16:29:47,833 9170 Watching for file changes with StatReloader
+WARNING 2023-04-20 16:29:49,528 9170 Session data corrupted
+ERROR 2023-04-20 16:29:49,544 9170 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/hoivan/Tech/django_youtube_mp3/song/views.py", line 31, in index
+    return render(request,"song/song.html",context)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 19: 'static'. Did you forget to register or load this tag?
+ERROR 2023-04-20 16:29:49,545 9170 "GET / HTTP/1.1" 500 128513
+WARNING 2023-04-20 16:32:00,191 9170 Session data corrupted
+ERROR 2023-04-20 16:32:00,216 9170 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/hoivan/Tech/django_youtube_mp3/song/views.py", line 31, in index
+    return render(request,"song/song.html",context)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 19: 'static'. Did you forget to register or load this tag?
+ERROR 2023-04-20 16:32:00,217 9170 "GET / HTTP/1.1" 500 128541
+INFO 2023-04-20 16:34:28,054 9245 Watching for file changes with StatReloader
+INFO 2023-04-20 16:34:29,598 9245 "GET / HTTP/1.1" 200 1310
+WARNING 2023-04-20 16:34:29,609 9245 "GET /static/song/static/css/style.css HTTP/1.1" 404 1834
+WARNING 2023-04-20 16:34:37,510 9245 Session data corrupted
+ERROR 2023-04-20 16:34:37,531 9245 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/hoivan/Tech/django_youtube_mp3/song/views.py", line 31, in index
+    return render(request,"song/song.html",context)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 19: 'static'. Did you forget to register or load this tag?
+ERROR 2023-04-20 16:34:37,532 9245 "GET / HTTP/1.1" 500 128561
+INFO 2023-04-20 16:34:43,024 9245 "GET / HTTP/1.1" 200 1310
+WARNING 2023-04-20 16:34:43,040 9245 "GET /static/song/static/css/style.css HTTP/1.1" 404 1834
+INFO 2023-04-20 16:35:08,983 9245 "GET / HTTP/1.1" 200 1310
+WARNING 2023-04-20 16:35:09,003 9245 "GET /static/song/static/css/style.css HTTP/1.1" 404 1834
+INFO 2023-04-20 16:36:55,430 9245 "GET / HTTP/1.1" 200 1294
+WARNING 2023-04-20 16:36:55,448 9245 "GET /static/song/static/css/style.css HTTP/1.1" 404 1834
+INFO 2023-04-20 16:37:02,289 9245 "GET / HTTP/1.1" 200 1289
+WARNING 2023-04-20 16:37:02,306 9245 "GET /static/static/css/style.css HTTP/1.1" 404 1819
+INFO 2023-04-20 16:37:11,630 9245 "GET / HTTP/1.1" 200 1289
+WARNING 2023-04-20 16:37:11,662 9245 "GET /static/static/css/style.css HTTP/1.1" 404 1819
+INFO 2023-04-20 16:37:13,634 9245 "GET / HTTP/1.1" 200 1289
+WARNING 2023-04-20 16:37:13,649 9245 "GET /static/static/css/style.css HTTP/1.1" 404 1819
+INFO 2023-04-20 16:37:18,103 9245 "GET / HTTP/1.1" 200 1282
+INFO 2023-04-20 16:37:18,125 9245 "GET /static/css/style.css HTTP/1.1" 200 1532
+INFO 2023-04-20 16:39:18,368 9245 "GET / HTTP/1.1" 200 1291
+INFO 2023-04-20 16:39:18,385 9245 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2023-04-20 16:40:13,873 9245 "GET / HTTP/1.1" 200 1356
+INFO 2023-04-20 16:40:13,884 9245 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2023-04-20 16:40:44,586 9245 "GET / HTTP/1.1" 200 1329
+INFO 2023-04-20 16:40:44,600 9245 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2023-04-20 16:41:37,833 9245 "GET / HTTP/1.1" 200 1432
+INFO 2023-04-20 16:41:37,844 9245 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2023-04-20 16:42:21,113 9245 "GET / HTTP/1.1" 200 1432
+INFO 2023-04-20 16:42:21,125 9245 "GET /static/css/style.css HTTP/1.1" 200 1681
+INFO 2023-04-20 16:42:22,668 9245 "GET / HTTP/1.1" 200 1432
+INFO 2023-04-20 16:42:22,680 9245 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2023-04-20 16:42:28,013 9245 "GET / HTTP/1.1" 200 1432
+INFO 2023-04-20 16:42:28,027 9245 "GET /static/css/style.css HTTP/1.1" 200 1681
+INFO 2023-04-20 16:42:31,783 9245 "GET / HTTP/1.1" 200 1432
+INFO 2023-04-20 16:42:31,796 9245 "GET /static/css/style.css HTTP/1.1" 200 1681
+INFO 2023-04-20 16:42:39,845 9245 "GET / HTTP/1.1" 200 1432
+INFO 2023-04-20 16:42:39,857 9245 "GET /static/css/style.css HTTP/1.1" 200 1682
+INFO 2023-04-20 16:43:30,313 9245 Client has sent a POST request. Now starts.
+WARNING 2023-04-20 16:43:30,374 9245 Session data corrupted
+ERROR 2023-04-20 16:43:30,390 9245 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/hoivan/Tech/django_youtube_mp3/song/views.py", line 14, in index
+    logger.info("Identified client's input - " + request.POST["url"])
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'url'
+ERROR 2023-04-20 16:43:30,391 9245 "POST / HTTP/1.1" 500 68397
+INFO 2023-04-20 16:43:48,805 9245 "GET / HTTP/1.1" 200 1420
+INFO 2023-04-20 16:43:48,818 9245 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2023-04-20 16:43:50,315 9245 Client has sent a POST request. Now starts.
+WARNING 2023-04-20 16:43:50,371 9245 Session data corrupted
+ERROR 2023-04-20 16:43:50,389 9245 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/hoivan/Tech/django_youtube_mp3/song/views.py", line 14, in index
+    logger.info("Identified client's input - " + request.POST["url"])
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'url'
+ERROR 2023-04-20 16:43:50,390 9245 "POST / HTTP/1.1" 500 68397
+INFO 2023-04-20 16:44:00,204 9245 "GET / HTTP/1.1" 200 1426
+INFO 2023-04-20 16:44:00,216 9245 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2023-04-20 16:44:02,032 9245 Client has sent a POST request. Now starts.
+INFO 2023-04-20 16:44:02,032 9245 Identified client's input - asd
+INFO 2023-04-20 16:44:02,033 9245 Data input is valid.
+INFO 2023-04-20 16:44:02,033 9245 Creating database entry to record this request.
+INFO 2023-04-20 16:44:02,033 9245 Completed - Database entry creation.
+INFO 2023-04-20 16:44:02,033 9245 Cleaning up output dir.
+INFO 2023-04-20 16:44:02,034 9245 Completed - Directory clean up.
+INFO 2023-04-20 16:44:02,035 9245 Downloading all songs in playlist through PyTube services.
+ERROR 2023-04-20 16:44:02,035 9245 'list'
+WARNING 2023-04-20 16:44:02,069 9245 Session data corrupted
+ERROR 2023-04-20 16:44:02,079 9245 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/hoivan/Tech/django_youtube_mp3/song/views.py", line 25, in index
+    logger.info(download_response["status_code"] + "-" + download_response["content"])
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+ERROR 2023-04-20 16:44:02,080 9245 "POST / HTTP/1.1" 500 60619
+INFO 2023-04-20 16:44:51,774 9245 /Users/hoivan/Tech/django_youtube_mp3/song/views.py changed, reloading.
+INFO 2023-04-20 16:44:52,032 9380 Watching for file changes with StatReloader
+INFO 2023-04-20 16:44:55,214 9380 "GET / HTTP/1.1" 200 1426
+INFO 2023-04-20 16:44:55,235 9380 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2023-04-20 16:44:56,472 9380 Client has sent a POST request. Now starts.
+INFO 2023-04-20 16:44:56,473 9380 Identified client's input - asd
+INFO 2023-04-20 16:44:56,473 9380 Data input is valid.
+INFO 2023-04-20 16:44:56,474 9380 Creating database entry to record this request.
+INFO 2023-04-20 16:44:56,474 9380 Completed - Database entry creation.
+INFO 2023-04-20 16:44:56,474 9380 Cleaning up output dir.
+INFO 2023-04-20 16:44:56,475 9380 Completed - Directory clean up.
+INFO 2023-04-20 16:44:56,475 9380 Downloading all songs in playlist through PyTube services.
+ERROR 2023-04-20 16:44:56,475 9380 'list'
+WARNING 2023-04-20 16:44:56,509 9380 Session data corrupted
+ERROR 2023-04-20 16:44:56,522 9380 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/hoivan/Tech/django_youtube_mp3/song/views.py", line 25, in index
+    logger.info(str(download_response["status_code"]) + "-" + download_response["content"])
+TypeError: can only concatenate str (not "KeyError") to str
+ERROR 2023-04-20 16:44:56,523 9380 "POST / HTTP/1.1" 500 60581
+INFO 2023-04-20 16:45:09,224 9380 /Users/hoivan/Tech/django_youtube_mp3/song/views.py changed, reloading.
+INFO 2023-04-20 16:45:09,487 9397 Watching for file changes with StatReloader
+INFO 2023-04-20 16:45:30,633 9397 /Users/hoivan/Tech/django_youtube_mp3/song/views.py changed, reloading.
+INFO 2023-04-20 16:45:30,913 9411 Watching for file changes with StatReloader
+INFO 2023-04-20 16:45:31,861 9411 "GET / HTTP/1.1" 200 1426
+INFO 2023-04-20 16:45:31,887 9411 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2023-04-20 16:45:32,187 9411 "GET / HTTP/1.1" 200 1426
+INFO 2023-04-20 16:45:33,738 9411 Client has sent a POST request. Now starts.
+INFO 2023-04-20 16:45:33,739 9411 Identified client's input - asd
+INFO 2023-04-20 16:45:33,739 9411 Data input is valid.
+INFO 2023-04-20 16:45:33,739 9411 Creating database entry to record this request.
+INFO 2023-04-20 16:45:33,740 9411 Completed - Database entry creation.
+INFO 2023-04-20 16:45:33,740 9411 Cleaning up output dir.
+INFO 2023-04-20 16:45:33,741 9411 Completed - Directory clean up.
+INFO 2023-04-20 16:45:33,741 9411 Downloading all songs in playlist through PyTube services.
+ERROR 2023-04-20 16:45:33,741 9411 'list'
+WARNING 2023-04-20 16:45:33,773 9411 Session data corrupted
+ERROR 2023-04-20 16:45:33,788 9411 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/hoivan/Tech/django_youtube_mp3/song/views.py", line 25, in index
+    logger.info(download_response["status_code"] + "-" + str(download_response["content"]))
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+ERROR 2023-04-20 16:45:33,788 9411 "POST / HTTP/1.1" 500 60629
+INFO 2023-04-20 16:45:37,700 9411 /Users/hoivan/Tech/django_youtube_mp3/song/views.py changed, reloading.
+INFO 2023-04-20 16:45:37,976 9429 Watching for file changes with StatReloader
+INFO 2023-04-20 16:45:44,685 9429 /Users/hoivan/Tech/django_youtube_mp3/song/views.py changed, reloading.
+INFO 2023-04-20 16:45:44,934 9437 Watching for file changes with StatReloader
+INFO 2023-04-20 16:45:46,313 9437 "GET / HTTP/1.1" 200 1426
+INFO 2023-04-20 16:45:46,754 9437 "GET / HTTP/1.1" 200 1426
+INFO 2023-04-20 16:45:48,193 9437 Client has sent a POST request. Now starts.
+INFO 2023-04-20 16:45:48,194 9437 Identified client's input - asda
+INFO 2023-04-20 16:45:48,194 9437 Data input is valid.
+INFO 2023-04-20 16:45:48,195 9437 Creating database entry to record this request.
+INFO 2023-04-20 16:45:48,195 9437 Completed - Database entry creation.
+INFO 2023-04-20 16:45:48,195 9437 Cleaning up output dir.
+INFO 2023-04-20 16:45:48,196 9437 Completed - Directory clean up.
+INFO 2023-04-20 16:45:48,196 9437 Downloading all songs in playlist through PyTube services.
+ERROR 2023-04-20 16:45:48,196 9437 'list'
+WARNING 2023-04-20 16:45:48,228 9437 Session data corrupted
+ERROR 2023-04-20 16:45:48,241 9437 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/hoivan/Tech/django_youtube_mp3/song/views.py", line 25, in index
+    logger.info(str(download_response["status_code"]) + "-" + download_response["content"])
+TypeError: can only concatenate str (not "KeyError") to str
+ERROR 2023-04-20 16:45:48,242 9437 "POST / HTTP/1.1" 500 60582
+INFO 2023-04-20 16:49:15,692 9437 "GET / HTTP/1.1" 200 1362
+INFO 2023-04-20 16:49:15,706 9437 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2023-04-20 16:50:04,445 9437 "GET / HTTP/1.1" 200 1384
+INFO 2023-04-20 16:50:04,456 9437 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2023-04-20 16:51:55,187 9437 "GET / HTTP/1.1" 200 1384
+INFO 2023-04-20 16:51:55,206 9437 "GET /static/css/style.css HTTP/1.1" 200 1733
+INFO 2023-04-20 16:51:58,257 9437 "GET / HTTP/1.1" 200 1384
+INFO 2023-04-20 16:51:58,269 9437 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2023-04-20 16:52:41,898 9437 "GET / HTTP/1.1" 200 1566
+INFO 2023-04-20 16:52:41,909 9437 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2023-04-20 17:03:57,588 9437 "GET / HTTP/1.1" 200 20714
+INFO 2023-04-20 17:04:58,639 9437 "GET / HTTP/1.1" 200 20714
+INFO 2023-04-20 17:05:02,711 9437 "GET / HTTP/1.1" 200 20697
+INFO 2023-04-20 17:10:04,204 9437 "GET / HTTP/1.1" 200 2014
+INFO 2023-04-20 17:10:04,215 9437 "GET /static/css/style.css HTTP/1.1" 200 1711
+INFO 2023-04-20 17:11:45,612 9437 "GET / HTTP/1.1" 200 2179
+INFO 2023-04-20 17:11:45,621 9437 "GET /static/css/style.css HTTP/1.1" 200 1761
+INFO 2023-04-20 17:12:13,215 9437 "GET / HTTP/1.1" 200 2178
+INFO 2023-04-20 17:12:13,231 9437 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2023-04-20 17:12:21,028 9437 "GET / HTTP/1.1" 200 2177
+INFO 2023-04-20 17:12:21,044 9437 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2023-04-20 17:12:52,798 9437 "GET / HTTP/1.1" 200 2169
+INFO 2023-04-20 17:12:52,811 9437 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2023-04-20 17:14:02,101 9437 "GET / HTTP/1.1" 200 2251
+INFO 2023-04-20 17:14:02,116 9437 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2023-04-20 17:19:17,136 9437 "GET / HTTP/1.1" 200 2251
+INFO 2023-04-20 17:19:17,148 9437 "GET /static/css/style.css HTTP/1.1" 200 1801
+WARNING 2023-04-20 17:19:17,166 9437 "GET /static/css/media/Image.jpg HTTP/1.1" 404 1816
+INFO 2023-04-20 17:19:22,663 9437 "GET / HTTP/1.1" 200 2251
+INFO 2023-04-20 17:19:22,679 9437 "GET /static/css/style.css HTTP/1.1" 200 1802
+INFO 2023-04-20 17:19:22,693 9437 "GET /static/media/Image.jpg HTTP/1.1" 200 2285689
+INFO 2023-04-20 17:19:27,211 9437 "GET / HTTP/1.1" 200 2251
+INFO 2023-04-20 17:19:27,252 9437 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2023-04-20 17:20:04,420 9437 "GET / HTTP/1.1" 200 2251
+INFO 2023-04-20 17:20:04,430 9437 "GET /static/css/style.css HTTP/1.1" 200 1806
+INFO 2023-04-20 17:20:22,751 9437 "GET / HTTP/1.1" 200 2251
+INFO 2023-04-20 17:20:22,769 9437 "GET /static/css/style.css HTTP/1.1" 200 1810
+INFO 2023-04-20 17:20:29,892 9437 "GET / HTTP/1.1" 200 2251
+INFO 2023-04-20 17:20:29,900 9437 "GET /static/css/style.css HTTP/1.1" 200 1814
+INFO 2023-04-20 17:21:14,259 9437 "GET / HTTP/1.1" 200 2251
+INFO 2023-04-20 17:21:14,267 9437 "GET /static/css/style.css HTTP/1.1" 200 1812
+INFO 2023-04-20 17:21:26,323 9437 "GET / HTTP/1.1" 200 2251
+INFO 2023-04-20 17:21:26,336 9437 "GET /static/css/style.css HTTP/1.1" 200 1812
+INFO 2023-04-20 17:21:53,540 9437 "GET / HTTP/1.1" 200 2251
+INFO 2023-04-20 17:21:53,550 9437 "GET /static/css/style.css HTTP/1.1" 200 1812
+INFO 2023-04-20 17:21:53,558 9437 "GET /static/media/Image.jpg HTTP/1.1" 304 0
+INFO 2023-04-20 17:23:26,795 9437 "GET / HTTP/1.1" 200 2251
+INFO 2023-04-20 17:23:26,805 9437 "GET /static/css/style.css HTTP/1.1" 200 1846
+INFO 2023-04-20 17:23:46,018 9437 "GET / HTTP/1.1" 200 2251
+INFO 2023-04-20 17:23:46,030 9437 "GET /static/css/style.css HTTP/1.1" 200 1880
+INFO 2023-04-20 17:24:15,223 9437 "GET / HTTP/1.1" 200 2251
+INFO 2023-04-20 17:24:15,233 9437 "GET /static/css/style.css HTTP/1.1" 200 1874
+INFO 2023-04-20 17:25:01,896 9437 "GET / HTTP/1.1" 200 2251
+INFO 2023-04-20 17:25:01,913 9437 "GET /static/css/style.css HTTP/1.1" 200 1872
+INFO 2023-04-20 17:25:01,921 9437 "GET /static/media/Image.jpg HTTP/1.1" 304 0
+INFO 2023-04-20 17:25:26,730 9437 "GET / HTTP/1.1" 200 2251
+INFO 2023-04-20 17:25:26,742 9437 "GET /static/css/style.css HTTP/1.1" 200 1866
+INFO 2023-04-20 17:25:28,274 9437 "GET / HTTP/1.1" 200 2251
+INFO 2023-04-20 17:25:28,286 9437 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2023-04-20 17:25:48,874 9437 "GET / HTTP/1.1" 200 2251
+INFO 2023-04-20 17:25:48,885 9437 "GET /static/css/style.css HTTP/1.1" 200 1866
+INFO 2023-04-20 17:26:04,041 9437 "GET / HTTP/1.1" 200 2251
+INFO 2023-04-20 17:26:04,057 9437 "GET /static/css/style.css HTTP/1.1" 200 1865
+INFO 2023-04-20 17:26:23,260 9437 "GET / HTTP/1.1" 200 2251
+INFO 2023-04-20 17:26:23,271 9437 "GET /static/css/style.css HTTP/1.1" 200 1864
+INFO 2023-04-20 17:26:37,249 9437 "GET / HTTP/1.1" 200 2251
+INFO 2023-04-20 17:26:37,258 9437 "GET /static/css/style.css HTTP/1.1" 200 1859
+INFO 2023-04-20 17:26:38,886 9437 "GET / HTTP/1.1" 200 2251
+INFO 2023-04-20 17:26:38,897 9437 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2023-04-20 17:26:54,086 9437 "GET / HTTP/1.1" 200 2251
+INFO 2023-04-20 17:26:54,099 9437 "GET /static/css/style.css HTTP/1.1" 200 1860
+INFO 2023-04-20 17:28:45,517 9437 "GET / HTTP/1.1" 200 2251
+INFO 2023-04-20 17:28:45,525 9437 "GET /static/css/style.css HTTP/1.1" 200 1909
+INFO 2023-04-20 17:28:45,534 9437 "GET /static/media/Image.jpg HTTP/1.1" 304 0
+INFO 2023-04-20 17:28:57,908 9437 "GET / HTTP/1.1" 200 2251
+INFO 2023-04-20 17:28:57,922 9437 "GET /static/css/style.css HTTP/1.1" 200 1909
+INFO 2023-04-20 17:29:22,197 9437 "GET / HTTP/1.1" 200 2251
+INFO 2023-04-20 17:29:22,210 9437 "GET /static/css/style.css HTTP/1.1" 200 1959
+INFO 2023-04-20 17:29:36,825 9437 "GET / HTTP/1.1" 200 2196
+INFO 2023-04-20 17:29:36,833 9437 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2023-04-20 17:30:12,766 9437 "GET / HTTP/1.1" 200 2201
+INFO 2023-04-20 17:30:12,782 9437 "GET /static/css/style.css HTTP/1.1" 200 1982
+INFO 2023-04-20 17:30:14,842 9437 "GET / HTTP/1.1" 200 2201
+INFO 2023-04-20 17:30:14,852 9437 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2023-04-20 17:30:21,086 9437 "GET / HTTP/1.1" 200 2201
+INFO 2023-04-20 17:30:21,099 9437 "GET /static/css/style.css HTTP/1.1" 200 1981
+INFO 2023-04-20 17:30:25,774 9437 "GET / HTTP/1.1" 200 2201
+INFO 2023-04-20 17:30:25,782 9437 "GET /static/css/style.css HTTP/1.1" 200 1981
+INFO 2023-04-20 17:30:31,743 9437 "GET / HTTP/1.1" 200 2201
+INFO 2023-04-20 17:30:31,755 9437 "GET /static/css/style.css HTTP/1.1" 200 1981
+INFO 2023-04-20 17:30:35,784 9437 "GET / HTTP/1.1" 200 2201
+INFO 2023-04-20 17:30:35,794 9437 "GET /static/css/style.css HTTP/1.1" 200 1981
+INFO 2023-04-20 17:30:43,483 9437 "GET / HTTP/1.1" 200 2201
+INFO 2023-04-20 17:30:43,497 9437 "GET /static/css/style.css HTTP/1.1" 200 1982
+INFO 2023-04-20 17:31:01,797 9437 "GET / HTTP/1.1" 200 2201
+INFO 2023-04-20 17:31:01,806 9437 "GET /static/css/style.css HTTP/1.1" 200 2005
+INFO 2023-04-20 17:32:07,494 9437 "GET / HTTP/1.1" 200 2201
+INFO 2023-04-20 17:32:07,510 9437 "GET /static/css/style.css HTTP/1.1" 200 2005
+INFO 2023-04-20 17:32:19,564 9437 "GET / HTTP/1.1" 200 2201
+INFO 2023-04-20 17:32:19,577 9437 "GET /static/css/style.css HTTP/1.1" 200 2005
+INFO 2023-04-20 17:32:19,584 9437 "GET /static/media/Image.jpg HTTP/1.1" 304 0
+INFO 2023-04-20 17:33:50,560 9437 "GET / HTTP/1.1" 200 2201
+INFO 2023-04-20 17:33:50,569 9437 "GET /static/css/style.css HTTP/1.1" 200 2005
+INFO 2023-04-20 17:35:16,996 9437 "GET / HTTP/1.1" 200 2201
+INFO 2023-04-20 17:35:17,006 9437 "GET /static/css/style.css HTTP/1.1" 200 2004
+INFO 2023-04-20 17:35:37,584 9437 "GET / HTTP/1.1" 200 2201
+INFO 2023-04-20 17:35:37,598 9437 "GET /static/css/style.css HTTP/1.1" 200 2025
+INFO 2023-04-20 17:36:00,454 9437 "GET / HTTP/1.1" 200 2201
+INFO 2023-04-20 17:36:00,470 9437 "GET /static/css/style.css HTTP/1.1" 200 2006
+INFO 2023-04-20 17:36:14,873 9437 "GET / HTTP/1.1" 200 2201
+INFO 2023-04-20 17:36:14,886 9437 "GET /static/css/style.css HTTP/1.1" 200 2025
+INFO 2023-04-20 17:36:14,893 9437 "GET /static/media/Image.jpg HTTP/1.1" 304 0
+INFO 2023-04-20 17:36:23,064 9437 "GET / HTTP/1.1" 200 2201
+INFO 2023-04-20 17:36:23,076 9437 "GET /static/css/style.css HTTP/1.1" 200 2025
+INFO 2023-04-20 17:36:45,985 9437 "GET / HTTP/1.1" 200 2201
+INFO 2023-04-20 17:36:46,001 9437 "GET /static/css/style.css HTTP/1.1" 200 2038
+INFO 2023-04-20 17:37:16,599 9437 "GET / HTTP/1.1" 200 2205
+INFO 2023-04-20 17:37:16,611 9437 "GET /static/css/style.css HTTP/1.1" 200 2025
+INFO 2023-04-20 17:37:59,546 9437 "GET / HTTP/1.1" 200 2201
+INFO 2023-04-20 17:37:59,560 9437 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2023-04-20 17:38:20,944 9437 "GET / HTTP/1.1" 200 2200
+INFO 2023-04-20 17:38:20,955 9437 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2023-04-20 17:38:22,997 9437 Client has sent a POST request. Now starts.
+WARNING 2023-04-20 17:38:23,059 9437 Session data corrupted
+ERROR 2023-04-20 17:38:23,074 9437 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/hoivan/Tech/django_youtube_mp3/song/views.py", line 14, in index
+    logger.info("Identified client's input - " + request.POST["url"])
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'url'
+ERROR 2023-04-20 17:38:23,075 9437 "POST / HTTP/1.1" 500 69728
+INFO 2023-04-20 17:38:31,491 9437 "GET / HTTP/1.1" 200 2200
+INFO 2023-04-20 17:38:31,499 9437 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2023-04-20 17:40:05,690 9437 "GET / HTTP/1.1" 200 2200
+INFO 2023-04-20 17:40:05,705 9437 "GET /static/css/style.css HTTP/1.1" 200 2025
+INFO 2023-04-20 17:40:15,746 9437 "GET / HTTP/1.1" 200 2201
+INFO 2023-04-20 17:40:15,753 9437 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2023-04-20 17:40:29,625 9437 "GET / HTTP/1.1" 200 2200
+INFO 2023-04-20 17:40:29,638 9437 "GET /static/css/style.css HTTP/1.1" 200 2024
+INFO 2023-04-20 17:40:29,644 9437 "GET /static/media/Image.jpg HTTP/1.1" 304 0
+INFO 2023-04-20 17:40:38,648 9437 "GET / HTTP/1.1" 200 2200
+INFO 2023-04-20 17:40:38,660 9437 "GET /static/css/style.css HTTP/1.1" 200 2024
+INFO 2023-04-20 17:41:06,341 9437 "GET / HTTP/1.1" 200 2200
+INFO 2023-04-20 17:41:06,358 9437 "GET /static/css/style.css HTTP/1.1" 200 2025
+INFO 2023-04-20 17:41:16,140 9437 "GET / HTTP/1.1" 200 2200
+INFO 2023-04-20 17:41:16,151 9437 "GET /static/css/style.css HTTP/1.1" 200 2026
+INFO 2023-04-20 17:41:18,911 9437 "GET / HTTP/1.1" 200 2200
+INFO 2023-04-20 17:41:18,922 9437 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2023-04-20 17:41:22,566 9437 "GET / HTTP/1.1" 200 2200
+INFO 2023-04-20 17:41:22,577 9437 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2023-04-20 17:42:07,789 9437 "GET / HTTP/1.1" 200 2200
+INFO 2023-04-20 17:42:07,805 9437 "GET /static/css/style.css HTTP/1.1" 200 1808
+INFO 2023-04-20 17:42:27,542 9437 "GET / HTTP/1.1" 200 2200
+INFO 2023-04-20 17:42:27,554 9437 "GET /static/css/style.css HTTP/1.1" 200 1807
+INFO 2023-04-20 17:42:45,014 9437 "GET / HTTP/1.1" 200 2200
+INFO 2023-04-20 17:42:45,023 9437 "GET /static/css/style.css HTTP/1.1" 200 1788
+INFO 2023-04-20 17:42:53,575 9437 "GET / HTTP/1.1" 200 2200
+INFO 2023-04-20 17:42:53,587 9437 "GET /static/css/style.css HTTP/1.1" 200 1788
+INFO 2023-04-20 17:43:00,290 9437 "GET / HTTP/1.1" 200 2200
+INFO 2023-04-20 17:43:00,301 9437 "GET /static/css/style.css HTTP/1.1" 200 1807
+INFO 2023-04-20 17:43:24,314 9437 "GET / HTTP/1.1" 200 2200
+INFO 2023-04-20 17:43:24,329 9437 "GET /static/css/style.css HTTP/1.1" 200 1807
+INFO 2023-04-20 17:43:37,983 9437 "GET / HTTP/1.1" 200 2200
+INFO 2023-04-20 17:43:38,001 9437 "GET /static/css/style.css HTTP/1.1" 200 1784
+INFO 2023-04-20 17:44:29,343 9437 "GET / HTTP/1.1" 200 2200
+INFO 2023-04-20 17:44:29,360 9437 "GET /static/css/style.css HTTP/1.1" 200 1802
+INFO 2023-04-20 17:45:43,741 9437 "GET / HTTP/1.1" 200 2204
+INFO 2023-04-20 17:45:43,748 9437 "GET /static/css/style.css HTTP/1.1" 200 1802
+INFO 2023-04-20 17:45:43,754 9437 "GET /static/media/Image.jpg HTTP/1.1" 304 0
+INFO 2023-04-20 17:46:46,957 9437 "GET / HTTP/1.1" 200 2248
+INFO 2023-04-20 17:46:46,971 9437 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2023-04-20 17:48:14,849 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:48:14,865 9437 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2023-04-20 17:48:40,547 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:48:40,560 9437 "GET /static/css/style.css HTTP/1.1" 200 1802
+INFO 2023-04-20 17:48:47,808 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:48:47,818 9437 "GET /static/css/style.css HTTP/1.1" 200 1802
+INFO 2023-04-20 17:49:12,306 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:49:12,319 9437 "GET /static/css/style.css HTTP/1.1" 200 1781
+INFO 2023-04-20 17:49:20,154 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:49:20,169 9437 "GET /static/css/style.css HTTP/1.1" 200 1781
+INFO 2023-04-20 17:49:56,739 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:49:56,746 9437 "GET /static/css/style.css HTTP/1.1" 200 1816
+INFO 2023-04-20 17:50:52,889 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:50:52,899 9437 "GET /static/css/style.css HTTP/1.1" 200 1832
+INFO 2023-04-20 17:50:52,905 9437 "GET /static/media/Image.jpg HTTP/1.1" 304 0
+INFO 2023-04-20 17:50:59,373 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:50:59,385 9437 "GET /static/css/style.css HTTP/1.1" 200 1832
+INFO 2023-04-20 17:51:04,037 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:51:04,046 9437 "GET /static/css/style.css HTTP/1.1" 200 1832
+INFO 2023-04-20 17:51:09,110 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:51:09,123 9437 "GET /static/css/style.css HTTP/1.1" 200 1833
+INFO 2023-04-20 17:51:19,801 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:51:19,808 9437 "GET /static/css/style.css HTTP/1.1" 200 1839
+INFO 2023-04-20 17:51:28,864 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:51:28,876 9437 "GET /static/css/style.css HTTP/1.1" 200 1839
+INFO 2023-04-20 17:51:35,829 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:51:35,840 9437 "GET /static/css/style.css HTTP/1.1" 200 1839
+INFO 2023-04-20 17:51:41,035 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:51:41,052 9437 "GET /static/css/style.css HTTP/1.1" 200 1836
+INFO 2023-04-20 17:51:45,068 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:51:45,082 9437 "GET /static/css/style.css HTTP/1.1" 200 1832
+INFO 2023-04-20 17:51:55,788 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:51:55,801 9437 "GET /static/css/style.css HTTP/1.1" 200 1818
+INFO 2023-04-20 17:53:26,945 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:53:26,961 9437 "GET /static/css/style.css HTTP/1.1" 200 1922
+INFO 2023-04-20 17:53:38,477 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:53:38,488 9437 "GET /static/css/style.css HTTP/1.1" 200 1929
+INFO 2023-04-20 17:53:43,444 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:53:43,458 9437 "GET /static/css/style.css HTTP/1.1" 200 1928
+INFO 2023-04-20 17:53:55,363 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:53:55,377 9437 "GET /static/css/style.css HTTP/1.1" 200 1928
+INFO 2023-04-20 17:54:01,693 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:54:01,704 9437 "GET /static/css/style.css HTTP/1.1" 200 1928
+INFO 2023-04-20 17:54:06,801 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:54:06,809 9437 "GET /static/css/style.css HTTP/1.1" 200 1928
+INFO 2023-04-20 17:54:11,522 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:54:11,533 9437 "GET /static/css/style.css HTTP/1.1" 200 1929
+INFO 2023-04-20 17:54:25,330 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:54:25,342 9437 "GET /static/css/style.css HTTP/1.1" 200 1991
+INFO 2023-04-20 17:54:40,024 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:54:40,038 9437 "GET /static/css/style.css HTTP/1.1" 200 2055
+INFO 2023-04-20 17:54:51,271 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:54:51,282 9437 "GET /static/css/style.css HTTP/1.1" 200 2119
+INFO 2023-04-20 17:54:57,563 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:54:57,578 9437 "GET /static/css/style.css HTTP/1.1" 200 2119
+INFO 2023-04-20 17:55:43,524 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:55:43,532 9437 "GET /static/css/style.css HTTP/1.1" 200 2152
+INFO 2023-04-20 17:55:55,209 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:55:55,220 9437 "GET /static/css/style.css HTTP/1.1" 200 2150
+INFO 2023-04-20 17:56:01,148 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:56:01,165 9437 "GET /static/css/style.css HTTP/1.1" 200 2151
+INFO 2023-04-20 17:56:15,090 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:56:15,098 9437 "GET /static/css/style.css HTTP/1.1" 200 2185
+INFO 2023-04-20 17:56:43,227 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:56:43,243 9437 "GET /static/css/style.css HTTP/1.1" 200 2189
+INFO 2023-04-20 17:56:43,254 9437 "GET /static/media/Image.jpg HTTP/1.1" 304 0
+INFO 2023-04-20 17:56:59,258 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:56:59,279 9437 "GET /static/css/style.css HTTP/1.1" 200 2193
+INFO 2023-04-20 17:57:08,417 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:57:08,425 9437 "GET /static/css/style.css HTTP/1.1" 200 2190
+INFO 2023-04-20 17:57:19,896 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:57:19,910 9437 "GET /static/css/style.css HTTP/1.1" 200 2191
+INFO 2023-04-20 17:57:31,147 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:57:31,159 9437 "GET /static/css/style.css HTTP/1.1" 200 2192
+INFO 2023-04-20 17:57:47,001 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:57:47,012 9437 "GET /static/css/style.css HTTP/1.1" 200 2192
+INFO 2023-04-20 17:57:51,970 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:57:51,980 9437 "GET /static/css/style.css HTTP/1.1" 200 2189
+INFO 2023-04-20 17:58:15,852 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:58:15,861 9437 "GET /static/css/style.css HTTP/1.1" 200 2190
+INFO 2023-04-20 17:58:22,772 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:58:22,783 9437 "GET /static/css/style.css HTTP/1.1" 200 2189
+INFO 2023-04-20 17:58:29,431 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:58:29,444 9437 "GET /static/css/style.css HTTP/1.1" 200 2187
+INFO 2023-04-20 17:58:33,891 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:58:33,898 9437 "GET /static/css/style.css HTTP/1.1" 200 2188
+INFO 2023-04-20 17:58:46,473 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:58:46,485 9437 "GET /static/css/style.css HTTP/1.1" 200 2189
+INFO 2023-04-20 17:59:49,283 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:59:49,295 9437 "GET /static/css/style.css HTTP/1.1" 200 2190
+INFO 2023-04-20 17:59:54,131 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 17:59:54,145 9437 "GET /static/css/style.css HTTP/1.1" 200 2191
+INFO 2023-04-20 18:00:05,057 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 18:00:05,067 9437 "GET /static/css/style.css HTTP/1.1" 200 2193
+INFO 2023-04-20 18:00:09,586 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 18:00:09,596 9437 "GET /static/css/style.css HTTP/1.1" 200 2193
+INFO 2023-04-20 18:00:13,596 9437 "GET / HTTP/1.1" 200 2433
+INFO 2023-04-20 18:00:13,607 9437 "GET /static/css/style.css HTTP/1.1" 200 2193
+INFO 2023-04-20 18:02:04,955 9437 "GET / HTTP/1.1" 200 2463
+INFO 2023-04-20 18:02:04,965 9437 "GET /static/css/style.css HTTP/1.1" 200 2262
+INFO 2023-04-20 18:02:50,476 9437 "GET / HTTP/1.1" 200 2463
+INFO 2023-04-20 18:02:50,485 9437 "GET /static/css/style.css HTTP/1.1" 200 2287
+INFO 2023-04-20 18:03:12,379 9437 "GET / HTTP/1.1" 200 2463
+INFO 2023-04-20 18:03:12,388 9437 "GET /static/css/style.css HTTP/1.1" 200 2293
+INFO 2023-04-20 18:03:12,395 9437 "GET /static/media/Image.jpg HTTP/1.1" 304 0
+INFO 2023-04-20 18:03:41,868 9437 "GET / HTTP/1.1" 200 2463
+INFO 2023-04-20 18:03:41,876 9437 "GET /static/css/style.css HTTP/1.1" 200 2291
+INFO 2023-04-20 18:04:24,442 9437 "GET / HTTP/1.1" 200 2463
+INFO 2023-04-20 18:04:24,454 9437 "GET /static/css/style.css HTTP/1.1" 200 2294
+INFO 2023-04-20 18:04:25,798 9437 "GET / HTTP/1.1" 200 2463
+INFO 2023-04-20 18:04:25,810 9437 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2023-04-20 18:04:30,953 9437 "GET / HTTP/1.1" 200 2463
+INFO 2023-04-20 18:04:30,967 9437 "GET /static/css/style.css HTTP/1.1" 200 2293
+INFO 2023-04-20 18:04:42,312 9437 "GET / HTTP/1.1" 200 2463
+INFO 2023-04-20 18:04:42,324 9437 "GET /static/css/style.css HTTP/1.1" 200 2295
+INFO 2023-04-20 18:04:51,265 9437 "GET / HTTP/1.1" 200 2463
+INFO 2023-04-20 18:04:51,280 9437 "GET /static/css/style.css HTTP/1.1" 200 2295
+INFO 2023-04-20 18:05:01,188 9437 "GET / HTTP/1.1" 200 2463
+INFO 2023-04-20 18:05:01,201 9437 "GET /static/css/style.css HTTP/1.1" 200 2295
+INFO 2023-04-20 18:05:08,045 9437 "GET / HTTP/1.1" 200 2463
+INFO 2023-04-20 18:05:08,058 9437 "GET /static/css/style.css HTTP/1.1" 200 2295
+INFO 2023-04-20 18:05:33,356 9437 "GET / HTTP/1.1" 200 2463
+INFO 2023-04-20 18:05:33,367 9437 "GET /static/css/style.css HTTP/1.1" 200 2297
+INFO 2023-04-20 18:06:45,108 9437 "GET / HTTP/1.1" 200 2463
+INFO 2023-04-20 18:06:45,123 9437 "GET /static/css/style.css HTTP/1.1" 200 2192
+INFO 2023-04-20 18:07:06,736 9437 "GET / HTTP/1.1" 200 2463
+INFO 2023-04-20 18:07:06,748 9437 "GET /static/css/style.css HTTP/1.1" 200 2194
+INFO 2023-04-20 18:07:18,388 9437 "GET / HTTP/1.1" 200 2463
+INFO 2023-04-20 18:07:18,399 9437 "GET /static/css/style.css HTTP/1.1" 200 2223
+INFO 2023-04-20 18:07:30,259 9437 "GET / HTTP/1.1" 200 2463
+INFO 2023-04-20 18:07:30,271 9437 "GET /static/css/style.css HTTP/1.1" 200 2219
+INFO 2023-04-20 18:07:47,998 9437 "GET / HTTP/1.1" 200 2463
+INFO 2023-04-20 18:07:48,012 9437 "GET /static/css/style.css HTTP/1.1" 200 2220
+INFO 2023-04-20 18:08:00,088 9437 "GET / HTTP/1.1" 200 2463
+INFO 2023-04-20 18:08:00,095 9437 "GET /static/css/style.css HTTP/1.1" 200 2220
+INFO 2023-04-20 18:09:34,815 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:09:34,829 9437 "GET /static/css/style.css HTTP/1.1" 200 2254
+INFO 2023-04-20 18:09:42,856 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:09:42,867 9437 "GET /static/css/style.css HTTP/1.1" 200 2272
+INFO 2023-04-20 18:09:47,497 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:09:47,512 9437 "GET /static/css/style.css HTTP/1.1" 200 2270
+INFO 2023-04-20 18:10:01,785 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:10:01,793 9437 "GET /static/css/style.css HTTP/1.1" 200 2263
+INFO 2023-04-20 18:10:10,746 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:10:10,760 9437 "GET /static/css/style.css HTTP/1.1" 200 2289
+INFO 2023-04-20 18:10:10,768 9437 "GET /static/media/Image.jpg HTTP/1.1" 304 0
+INFO 2023-04-20 18:10:11,832 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:10:11,841 9437 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2023-04-20 18:10:26,180 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:10:26,190 9437 "GET /static/css/style.css HTTP/1.1" 200 2290
+INFO 2023-04-20 18:10:44,659 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:10:44,674 9437 "GET /static/css/style.css HTTP/1.1" 200 2312
+INFO 2023-04-20 18:10:52,096 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:10:52,108 9437 "GET /static/css/style.css HTTP/1.1" 200 2314
+INFO 2023-04-20 18:11:01,199 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:11:01,211 9437 "GET /static/css/style.css HTTP/1.1" 200 2315
+INFO 2023-04-20 18:11:09,571 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:11:09,586 9437 "GET /static/css/style.css HTTP/1.1" 200 2314
+INFO 2023-04-20 18:11:21,621 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:11:21,634 9437 "GET /static/css/style.css HTTP/1.1" 200 2318
+INFO 2023-04-20 18:11:35,857 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:11:35,870 9437 "GET /static/css/style.css HTTP/1.1" 200 2334
+INFO 2023-04-20 18:11:43,189 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:11:43,201 9437 "GET /static/css/style.css HTTP/1.1" 200 2351
+INFO 2023-04-20 18:12:22,010 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:12:22,025 9437 "GET /static/css/style.css HTTP/1.1" 200 2370
+INFO 2023-04-20 18:13:11,131 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:13:11,141 9437 "GET /static/css/style.css HTTP/1.1" 200 2370
+INFO 2023-04-20 18:13:15,425 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:13:15,436 9437 "GET /static/css/style.css HTTP/1.1" 200 2370
+INFO 2023-04-20 18:13:19,844 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:13:19,855 9437 "GET /static/css/style.css HTTP/1.1" 200 2370
+INFO 2023-04-20 18:13:26,968 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:13:26,986 9437 "GET /static/css/style.css HTTP/1.1" 200 2372
+INFO 2023-04-20 18:13:34,048 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:13:34,062 9437 "GET /static/css/style.css HTTP/1.1" 200 2373
+INFO 2023-04-20 18:13:56,008 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:13:56,021 9437 "GET /static/css/style.css HTTP/1.1" 200 2375
+INFO 2023-04-20 18:14:05,098 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:14:05,110 9437 "GET /static/css/style.css HTTP/1.1" 200 2375
+INFO 2023-04-20 18:14:17,761 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:14:17,771 9437 "GET /static/css/style.css HTTP/1.1" 200 2377
+INFO 2023-04-20 18:14:28,252 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:14:28,269 9437 "GET /static/css/style.css HTTP/1.1" 200 2377
+INFO 2023-04-20 18:15:11,856 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:15:11,868 9437 "GET /static/css/style.css HTTP/1.1" 200 2395
+INFO 2023-04-20 18:15:21,464 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:15:21,478 9437 "GET /static/css/style.css HTTP/1.1" 200 2395
+INFO 2023-04-20 18:16:01,147 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:16:01,167 9437 "GET /static/css/style.css HTTP/1.1" 200 2406
+INFO 2023-04-20 18:16:12,539 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:16:12,552 9437 "GET /static/css/style.css HTTP/1.1" 200 2417
+INFO 2023-04-20 18:17:13,357 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:17:13,369 9437 "GET /static/css/style.css HTTP/1.1" 200 2390
+INFO 2023-04-20 18:17:57,665 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:17:57,671 9437 "GET /static/css/style.css HTTP/1.1" 200 2424
+INFO 2023-04-20 18:17:57,677 9437 "GET /static/media/Image.jpg HTTP/1.1" 304 0
+INFO 2023-04-20 18:18:06,664 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:18:06,675 9437 "GET /static/css/style.css HTTP/1.1" 200 2390
+INFO 2023-04-20 18:18:21,604 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:18:21,621 9437 "GET /static/css/style.css HTTP/1.1" 200 2390
+INFO 2023-04-20 18:18:30,996 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:18:31,010 9437 "GET /static/css/style.css HTTP/1.1" 200 2390
+INFO 2023-04-20 18:18:48,741 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:18:48,753 9437 "GET /static/css/style.css HTTP/1.1" 200 2372
+INFO 2023-04-20 18:18:56,571 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:18:56,583 9437 "GET /static/css/style.css HTTP/1.1" 200 2390
+INFO 2023-04-20 18:19:12,109 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:19:12,122 9437 "GET /static/css/style.css HTTP/1.1" 200 2335
+INFO 2023-04-20 18:19:58,687 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:19:58,704 9437 "GET /static/css/style.css HTTP/1.1" 200 2347
+INFO 2023-04-20 18:19:58,720 9437 "GET /static/media/Purple_Background.jpg HTTP/1.1" 200 3643400
+INFO 2023-04-20 18:20:10,289 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:20:10,303 9437 "GET /static/css/style.css HTTP/1.1" 200 2308
+INFO 2023-04-20 18:20:24,266 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:20:24,279 9437 "GET /static/css/style.css HTTP/1.1" 200 2308
+INFO 2023-04-20 18:21:50,474 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:21:50,485 9437 "GET /static/css/style.css HTTP/1.1" 200 2306
+INFO 2023-04-20 18:21:50,495 9437 "GET /static/media/Dark_Background.jpg HTTP/1.1" 200 749183
+INFO 2023-04-20 18:23:15,591 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:23:15,599 9437 "GET /static/css/style.css HTTP/1.1" 200 2298
+INFO 2023-04-20 18:23:28,525 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:23:28,537 9437 "GET /static/css/style.css HTTP/1.1" 200 2264
+INFO 2023-04-20 18:23:33,155 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:23:33,169 9437 "GET /static/css/style.css HTTP/1.1" 200 2298
+INFO 2023-04-20 18:23:53,092 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:23:53,104 9437 "GET /static/css/style.css HTTP/1.1" 200 2295
+INFO 2023-04-20 18:24:03,226 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:24:03,241 9437 "GET /static/css/style.css HTTP/1.1" 200 2295
+INFO 2023-04-20 18:24:28,730 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:24:28,745 9437 "GET /static/css/style.css HTTP/1.1" 200 2332
+INFO 2023-04-20 18:24:36,128 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:24:36,141 9437 "GET /static/css/style.css HTTP/1.1" 200 2331
+INFO 2023-04-20 18:24:42,546 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:24:42,559 9437 "GET /static/css/style.css HTTP/1.1" 200 2331
+INFO 2023-04-20 18:24:44,891 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:24:44,903 9437 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2023-04-20 18:24:49,373 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:24:49,386 9437 "GET /static/css/style.css HTTP/1.1" 200 2331
+INFO 2023-04-20 18:24:53,425 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:24:53,437 9437 "GET /static/css/style.css HTTP/1.1" 200 2331
+INFO 2023-04-20 18:24:59,462 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:24:59,475 9437 "GET /static/css/style.css HTTP/1.1" 200 2331
+INFO 2023-04-20 18:25:04,712 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:25:04,722 9437 "GET /static/css/style.css HTTP/1.1" 200 2334
+INFO 2023-04-20 18:25:23,715 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:25:23,731 9437 "GET /static/css/style.css HTTP/1.1" 200 2334
+INFO 2023-04-20 18:25:30,496 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:25:30,512 9437 "GET /static/css/style.css HTTP/1.1" 200 2331
+INFO 2023-04-20 18:25:39,673 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:25:39,681 9437 "GET /static/css/style.css HTTP/1.1" 200 2332
+INFO 2023-04-20 18:25:48,569 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:25:48,576 9437 "GET /static/css/style.css HTTP/1.1" 200 2331
+INFO 2023-04-20 18:26:21,531 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:26:21,543 9437 "GET /static/css/style.css HTTP/1.1" 200 2331
+INFO 2023-04-20 18:26:21,550 9437 "GET /static/media/Image.jpg HTTP/1.1" 304 0
+INFO 2023-04-20 18:26:33,213 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:26:33,227 9437 "GET /static/css/style.css HTTP/1.1" 200 2232
+INFO 2023-04-20 18:26:40,977 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:26:40,988 9437 "GET /static/css/style.css HTTP/1.1" 200 2211
+INFO 2023-04-20 18:26:50,005 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:26:50,015 9437 "GET /static/css/style.css HTTP/1.1" 200 2184
+INFO 2023-04-20 18:26:55,498 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:26:55,512 9437 "GET /static/css/style.css HTTP/1.1" 200 2209
+INFO 2023-04-20 18:27:15,314 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:27:15,327 9437 "GET /static/css/style.css HTTP/1.1" 200 2209
+INFO 2023-04-20 18:27:19,389 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:27:19,400 9437 "GET /static/css/style.css HTTP/1.1" 200 2209
+INFO 2023-04-20 18:27:33,330 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:27:33,347 9437 "GET /static/css/style.css HTTP/1.1" 200 2209
+INFO 2023-04-20 18:27:38,738 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:27:38,749 9437 "GET /static/css/style.css HTTP/1.1" 200 2209
+INFO 2023-04-20 18:27:44,025 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:27:44,037 9437 "GET /static/css/style.css HTTP/1.1" 200 2209
+INFO 2023-04-20 18:27:50,995 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:27:51,007 9437 "GET /static/css/style.css HTTP/1.1" 200 2209
+INFO 2023-04-20 18:27:56,338 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:27:56,350 9437 "GET /static/css/style.css HTTP/1.1" 200 2209
+INFO 2023-04-20 18:28:13,072 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:28:13,079 9437 "GET /static/css/style.css HTTP/1.1" 200 2209
+INFO 2023-04-20 18:28:27,424 9437 "GET / HTTP/1.1" 200 2565
+INFO 2023-04-20 18:28:27,434 9437 "GET /static/css/style.css HTTP/1.1" 200 2227
+INFO 2023-04-20 18:30:25,201 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:30:25,214 9437 "GET /static/css/style.css HTTP/1.1" 200 2369
+INFO 2023-04-20 18:30:31,383 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:30:31,397 9437 "GET /static/css/style.css HTTP/1.1" 200 2354
+INFO 2023-04-20 18:30:38,777 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:30:38,789 9437 "GET /static/css/style.css HTTP/1.1" 200 2316
+INFO 2023-04-20 18:30:45,149 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:30:45,161 9437 "GET /static/css/style.css HTTP/1.1" 200 2274
+INFO 2023-04-20 18:31:01,695 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:31:01,703 9437 "GET /static/css/style.css HTTP/1.1" 200 2332
+INFO 2023-04-20 18:31:16,463 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:31:16,472 9437 "GET /static/css/style.css HTTP/1.1" 200 2315
+INFO 2023-04-20 18:31:29,717 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:31:29,731 9437 "GET /static/css/style.css HTTP/1.1" 200 2265
+INFO 2023-04-20 18:31:47,200 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:31:47,212 9437 "GET /static/css/style.css HTTP/1.1" 200 2221
+INFO 2023-04-20 18:31:53,417 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:31:53,431 9437 "GET /static/css/style.css HTTP/1.1" 200 2244
+INFO 2023-04-20 18:32:00,990 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:32:01,003 9437 "GET /static/css/style.css HTTP/1.1" 200 2298
+INFO 2023-04-20 18:32:08,325 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:32:08,336 9437 "GET /static/css/style.css HTTP/1.1" 200 2298
+INFO 2023-04-20 18:32:45,744 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:32:45,757 9437 "GET /static/css/style.css HTTP/1.1" 200 2273
+INFO 2023-04-20 18:32:56,817 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:32:56,830 9437 "GET /static/css/style.css HTTP/1.1" 200 2294
+INFO 2023-04-20 18:33:07,024 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:33:07,032 9437 "GET /static/css/style.css HTTP/1.1" 200 2296
+INFO 2023-04-20 18:33:14,535 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:33:14,548 9437 "GET /static/css/style.css HTTP/1.1" 200 2297
+INFO 2023-04-20 18:33:18,899 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:33:18,910 9437 "GET /static/css/style.css HTTP/1.1" 200 2296
+INFO 2023-04-20 18:33:31,550 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:33:31,561 9437 "GET /static/css/style.css HTTP/1.1" 200 2296
+INFO 2023-04-20 18:33:37,335 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:33:37,348 9437 "GET /static/css/style.css HTTP/1.1" 200 2296
+INFO 2023-04-20 18:33:48,430 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:33:48,449 9437 "GET /static/css/style.css HTTP/1.1" 200 2261
+INFO 2023-04-20 18:33:53,758 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:33:53,772 9437 "GET /static/css/style.css HTTP/1.1" 200 2207
+INFO 2023-04-20 18:34:01,162 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:34:01,173 9437 "GET /static/css/style.css HTTP/1.1" 200 2188
+INFO 2023-04-20 18:34:08,478 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:34:08,488 9437 "GET /static/css/style.css HTTP/1.1" 200 2212
+INFO 2023-04-20 18:34:15,113 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:34:15,126 9437 "GET /static/css/style.css HTTP/1.1" 200 2213
+INFO 2023-04-20 18:34:25,001 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:34:25,013 9437 "GET /static/css/style.css HTTP/1.1" 200 2213
+INFO 2023-04-20 18:34:37,870 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:34:37,883 9437 "GET /static/css/style.css HTTP/1.1" 200 2222
+INFO 2023-04-20 18:34:45,318 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:34:45,333 9437 "GET /static/css/style.css HTTP/1.1" 200 2213
+INFO 2023-04-20 18:35:00,333 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:35:00,351 9437 "GET /static/css/style.css HTTP/1.1" 200 2210
+INFO 2023-04-20 18:35:12,935 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:35:12,946 9437 "GET /static/css/style.css HTTP/1.1" 200 2210
+INFO 2023-04-20 18:35:18,792 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:35:18,804 9437 "GET /static/css/style.css HTTP/1.1" 200 2210
+INFO 2023-04-20 18:35:33,827 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:35:33,839 9437 "GET /static/css/style.css HTTP/1.1" 200 2216
+INFO 2023-04-20 18:35:33,846 9437 "GET /static/media/Image.jpg HTTP/1.1" 304 0
+INFO 2023-04-20 18:35:40,266 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:35:40,277 9437 "GET /static/css/style.css HTTP/1.1" 200 2215
+INFO 2023-04-20 18:35:48,222 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:35:48,232 9437 "GET /static/css/style.css HTTP/1.1" 200 2215
+INFO 2023-04-20 18:36:05,390 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:36:05,408 9437 "GET /static/css/style.css HTTP/1.1" 200 2215
+INFO 2023-04-20 18:36:12,317 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:36:12,329 9437 "GET /static/css/style.css HTTP/1.1" 200 2216
+INFO 2023-04-20 18:36:20,741 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:36:20,753 9437 "GET /static/css/style.css HTTP/1.1" 200 2215
+INFO 2023-04-20 18:36:34,841 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:36:34,852 9437 "GET /static/css/style.css HTTP/1.1" 200 2215
+INFO 2023-04-20 18:36:41,044 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:36:41,056 9437 "GET /static/css/style.css HTTP/1.1" 200 2215
+INFO 2023-04-20 18:37:08,688 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:37:08,701 9437 "GET /static/css/style.css HTTP/1.1" 200 2215
+INFO 2023-04-20 18:37:14,607 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:37:14,615 9437 "GET /static/css/style.css HTTP/1.1" 200 2215
+INFO 2023-04-20 18:37:19,830 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:37:19,842 9437 "GET /static/css/style.css HTTP/1.1" 200 2215
+INFO 2023-04-20 18:37:41,209 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:37:41,221 9437 "GET /static/css/style.css HTTP/1.1" 200 2233
+INFO 2023-04-20 18:37:56,965 9437 "GET / HTTP/1.1" 200 2571
+INFO 2023-04-20 18:37:56,982 9437 "GET /static/css/style.css HTTP/1.1" 200 2233
+INFO 2023-04-20 18:39:03,286 9437 "GET / HTTP/1.1" 200 2425
+INFO 2023-04-20 18:39:03,303 9437 "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2023-04-20 18:39:35,774 9437 "GET / HTTP/1.1" 200 2425
+INFO 2023-04-20 18:39:35,786 9437 "GET /static/css/style.css HTTP/1.1" 200 2233
+INFO 2023-04-20 18:39:47,380 9437 "GET / HTTP/1.1" 200 2425
+INFO 2023-04-20 18:39:47,387 9437 "GET /static/css/style.css HTTP/1.1" 200 2233
+INFO 2023-04-20 18:40:12,297 9437 "GET / HTTP/1.1" 200 2425
+INFO 2023-04-20 18:40:12,311 9437 "GET /static/css/style.css HTTP/1.1" 200 2247
+INFO 2023-04-20 18:40:21,857 9437 "GET / HTTP/1.1" 200 2425
+INFO 2023-04-20 18:40:21,869 9437 "GET /static/css/style.css HTTP/1.1" 200 2247
+INFO 2023-04-20 18:40:32,319 9437 "GET / HTTP/1.1" 200 2425
+INFO 2023-04-20 18:40:32,332 9437 "GET /static/css/style.css HTTP/1.1" 200 2261
+INFO 2023-04-20 18:40:40,034 9437 "GET / HTTP/1.1" 200 2425
+INFO 2023-04-20 18:40:40,046 9437 "GET /static/css/style.css HTTP/1.1" 200 2261
+INFO 2023-04-20 18:40:53,048 9437 "GET / HTTP/1.1" 200 2425
+INFO 2023-04-20 18:40:53,059 9437 "GET /static/css/style.css HTTP/1.1" 200 2261
+INFO 2023-04-20 18:41:00,785 9437 "GET / HTTP/1.1" 200 2425
+INFO 2023-04-20 18:41:00,799 9437 "GET /static/css/style.css HTTP/1.1" 200 2279
+INFO 2023-04-20 18:41:11,841 9437 "GET / HTTP/1.1" 200 2425
+INFO 2023-04-20 18:41:11,850 9437 "GET /static/css/style.css HTTP/1.1" 200 2284
+INFO 2023-04-20 18:41:18,078 9437 "GET / HTTP/1.1" 200 2425
+INFO 2023-04-20 18:41:18,092 9437 "GET /static/css/style.css HTTP/1.1" 200 2282
+INFO 2023-04-20 18:41:23,561 9437 "GET / HTTP/1.1" 200 2425
+INFO 2023-04-20 18:41:23,573 9437 "GET /static/css/style.css HTTP/1.1" 200 2282
+INFO 2023-04-20 18:41:32,824 9437 "GET / HTTP/1.1" 200 2425
+INFO 2023-04-20 18:41:32,838 9437 "GET /static/css/style.css HTTP/1.1" 200 2280
+INFO 2023-04-20 18:41:36,419 9437 "GET / HTTP/1.1" 200 2425
+INFO 2023-04-20 18:41:36,429 9437 "GET /static/css/style.css HTTP/1.1" 200 2280
+INFO 2023-04-20 18:41:55,590 9437 "GET / HTTP/1.1" 200 2425
+INFO 2023-04-20 18:41:55,603 9437 "GET /static/css/style.css HTTP/1.1" 200 2344
+INFO 2023-04-20 18:42:06,495 9437 "GET / HTTP/1.1" 200 2425
+INFO 2023-04-20 18:42:06,505 9437 "GET /static/css/style.css HTTP/1.1" 200 2365
+INFO 2023-04-20 18:42:21,866 9437 "GET / HTTP/1.1" 200 2425
+INFO 2023-04-20 18:42:21,885 9437 "GET /static/css/style.css HTTP/1.1" 200 2407
+INFO 2023-04-20 18:42:26,475 9437 "GET / HTTP/1.1" 200 2425
+INFO 2023-04-20 18:42:26,486 9437 "GET /static/css/style.css HTTP/1.1" 200 2407

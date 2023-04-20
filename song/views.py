@@ -22,7 +22,7 @@ def index(request):
                 logger.info("Server will now return the File Response to Client to download compressed dir.")
                 return FileResponse(zip_file)
             else:
-                logger.info(download_response["status_code"] + "-" + download_response["content"])
+                logger.info(str(download_response["status_code"]) + "-" + download_response["content"])
                 logger.info("Service has now stopped. No pending action until new request comes in.")
 
     context = {

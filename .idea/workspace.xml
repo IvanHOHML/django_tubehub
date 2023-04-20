@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2e2f4c3-d259-4784-a4aa-6370f5d78e33" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/song/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/song/static/media/Dark_Background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/song/static/media/Image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/song/static/media/Purple_Background.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_youtube_mp3/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_youtube_mp3/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/TubeHub.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/TubeHub.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/song/output/TubeHubPlaylist.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/song/output/TubeHubPlaylist/林俊傑_JJ_Lin_交換餘生_No_Turning_Back_Official_Music_Video.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/song/output/TubeHubPlaylist/陳奕迅_與我常在.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/song/templates/song/song.html" beforeDir="false" afterPath="$PROJECT_DIR$/song/templates/song/song.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/song/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/song/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/song/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/song/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +66,13 @@
     &quot;last_opened_file_path&quot;: &quot;/Users/hoivan/Tech/django_youtube_mp3&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/song/static/media" />
+      <recent name="$PROJECT_DIR$/song/static/css" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.Python tests for tests.SongTests">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="django_youtube_mp3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -76,6 +94,25 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for tests.SongTests" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="django_youtube_mp3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/song" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.SongTests&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for tests.SongTests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -100,12 +137,20 @@
       <option name="project" value="LOCAL" />
       <updated>1681977025772</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Jenkins Integration - Adding step block">
+      <created>1681977232393</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681977232393</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Jenkins Integration" />
     <MESSAGE value="Jenkins Integration - Removing Comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jenkins Integration - Removing Comments" />
+    <MESSAGE value="Jenkins Integration - Adding step block" />
+    <option name="LAST_COMMIT_MESSAGE" value="Jenkins Integration - Adding step block" />
   </component>
 </project>

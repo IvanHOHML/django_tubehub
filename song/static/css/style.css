@@ -1,0 +1,134 @@
+/* Default styles */
+.container {
+    max-width: 100%;
+    max-height:100%;
+    padding-left: 64px;
+}
+
+.header {
+    text-align: left;
+}
+
+h1 {
+    font-size: 48px;
+    padding-top: 128px;
+    margin-bottom: 24px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight:800;
+    color:#000000;
+    align:center;
+}
+
+p {
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight:200;
+    margin:6px;
+    color:#000000;
+}
+
+.form-group {
+    margin-top: 64px;
+    display:flex;
+}
+
+input[type=text] {
+    width: 512px;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight:200;
+    margin-right: 12px;
+    border: 2px solid #000000;
+    padding:16px;
+    border-radius: 4px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #000000;
+  opacity: 0.25; /* Firefox */
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+button[type=submit] {
+    background-color: #283655;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 108px;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight:800;
+}
+
+button[type=submit]:hover {
+    background-color: #2A5C8E;
+}
+
+.footer {
+    text-align: left;
+    margin-top: 40px;
+}
+
+.footer p {
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #808080;
+}
+
+/* Device-specific styles */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    input[type=email] {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    button[type=submit] {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+}
+
+/* Common styles for all devices */
+body {
+    background-color: #F4F4F4;
+    font-family: Arial, sans-serif;
+    background: url(../media/Image.jpg);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:left center
+}
+
+/* Global link styles */
+a {
+    /*color: #336699;*/
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

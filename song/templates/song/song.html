@@ -1,6 +1,15 @@
-<h2>Enter URL of the Youtube Playlist</h2>
+<!-- <h2>Enter URL of the Youtube Playlist</h2>
 <body>This site is for educational purpose.</body>
-
+<head>
+    <title>TubeHub - Download Youtube Playlist now</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load static %}
+    <link href="https://fonts.cdnfonts.com/css/british-classical" rel="stylesheet">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/british-classical');
+    </style>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
 <div class="column is-one-third">
     <form method="post">
         {% csrf_token %}
@@ -10,3 +19,37 @@
         </button>
     </form>
 </div>
+-->
+
+<!DOCTYPE html>
+<html>
+{%load static%}
+<head>
+    <title>Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.cdnfonts.com/css/british-classical" rel="stylesheet">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/british-classical');
+    </style>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"></head>
+<body>
+    <div class="container">
+        <div class="center">
+            <div class="header">
+                <h1>Download Playlist Now</h1>
+                <p>TubeHub is an open-sourced project that allows you download your Youtube playlist.</p>
+                <p>After you provide the Playlist url in the input box below, a zip file will be downloaded.</p>
+                <p>You can find all of your music as mp3 files after unzipping the item.</p>
+            </div>
+            <form method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <input type="text" id="url" name="email_input" required placeholder="e.g. https://www.youtube.com/watch?v=hT_nvWreIhg&list=PLbZIPy20-1pN7mqjckepWF78ndb6ci_qi">
+                    <button type="submit">Download</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
