@@ -1,0 +1,120 @@
+INFO 2023-04-18 17:09:16,285 54785 Watching for file changes with StatReloader
+WARNING 2023-04-18 17:09:25,660 54785 Not Found: /
+WARNING 2023-04-18 17:09:25,661 54785 "GET / HTTP/1.1" 404 2176
+INFO 2023-04-18 17:09:27,205 54785 "GET /song/ HTTP/1.1" 200 629
+INFO 2023-04-18 17:09:43,943 54785 "POST /song/ HTTP/1.1" 200 9643282
+INFO 2023-04-18 17:12:30,916 54785 /Users/hoivan/Tech/django_youtube_mp3/song/views.py changed, reloading.
+INFO 2023-04-18 17:12:31,193 54868 Watching for file changes with StatReloader
+INFO 2023-04-18 17:12:54,423 54868 /Users/hoivan/Tech/django_youtube_mp3/song/views.py changed, reloading.
+INFO 2023-04-18 17:12:54,697 54885 Watching for file changes with StatReloader
+INFO 2023-04-18 17:12:57,764 54885 "GET /song/ HTTP/1.1" 200 629
+INFO 2023-04-18 17:13:00,263 54885 POST request has been received. Now it starts processing.
+INFO 2023-04-18 17:13:11,977 54885 "POST /song/ HTTP/1.1" 200 9643282
+INFO 2023-04-18 17:31:33,055 54885 /Users/hoivan/Tech/django_youtube_mp3/services/download.py changed, reloading.
+INFO 2023-04-18 17:31:33,332 55462 Watching for file changes with StatReloader
+INFO 2023-04-18 17:31:36,838 55462 "GET /song/ HTTP/1.1" 200 629
+INFO 2023-04-18 17:31:39,033 55462 Client has sent a POST request. Now starts.
+WARNING 2023-04-18 17:31:39,059 55462 Session data corrupted
+ERROR 2023-04-18 17:31:39,070 55462 Internal Server Error: /song/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/hoivan/Tech/django_youtube_mp3/song/views.py", line 14, in index
+    logger.info("Identified client's input - " + form.url)
+AttributeError: 'PlaylistForm' object has no attribute 'url'
+ERROR 2023-04-18 17:31:39,070 55462 "POST /song/ HTTP/1.1" 500 60318
+INFO 2023-04-18 17:32:35,061 55462 /Users/hoivan/Tech/django_youtube_mp3/song/views.py changed, reloading.
+INFO 2023-04-18 17:32:35,332 55499 Watching for file changes with StatReloader
+INFO 2023-04-18 17:32:37,880 55499 /Users/hoivan/Tech/django_youtube_mp3/song/views.py changed, reloading.
+INFO 2023-04-18 17:32:38,136 55512 Watching for file changes with StatReloader
+INFO 2023-04-18 17:32:41,031 55512 "GET /song/ HTTP/1.1" 200 629
+INFO 2023-04-18 17:32:42,935 55512 Client has sent a POST request. Now starts.
+WARNING 2023-04-18 17:32:42,962 55512 Session data corrupted
+ERROR 2023-04-18 17:32:42,975 55512 Internal Server Error: /song/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/hoivan/Tech/django_youtube_mp3/song/views.py", line 14, in index
+    logger.info("Identified client's input - " + request.content.url)
+AttributeError: 'WSGIRequest' object has no attribute 'content'
+ERROR 2023-04-18 17:32:42,976 55512 "POST /song/ HTTP/1.1" 500 60352
+INFO 2023-04-18 17:32:49,145 55512 /Users/hoivan/Tech/django_youtube_mp3/song/views.py changed, reloading.
+INFO 2023-04-18 17:32:49,431 55530 Watching for file changes with StatReloader
+INFO 2023-04-18 17:32:51,451 55530 Client has sent a POST request. Now starts.
+WARNING 2023-04-18 17:32:51,479 55530 Session data corrupted
+ERROR 2023-04-18 17:32:51,495 55530 Internal Server Error: /song/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/hoivan/Tech/django_youtube_mp3/song/views.py", line 14, in index
+    logger.info("Identified client's input - " + request.context.url)
+AttributeError: 'WSGIRequest' object has no attribute 'context'
+ERROR 2023-04-18 17:32:51,496 55530 "POST /song/ HTTP/1.1" 500 60352
+INFO 2023-04-18 17:33:01,375 55530 /Users/hoivan/Tech/django_youtube_mp3/song/views.py changed, reloading.
+INFO 2023-04-18 17:33:01,657 55543 Watching for file changes with StatReloader
+INFO 2023-04-18 17:33:02,606 55543 "GET /song/ HTTP/1.1" 200 629
+INFO 2023-04-18 17:33:05,063 55543 Client has sent a POST request. Now starts.
+WARNING 2023-04-18 17:33:05,090 55543 Session data corrupted
+ERROR 2023-04-18 17:33:05,103 55543 Internal Server Error: /song/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/hoivan/Tech/django_youtube_mp3/song/views.py", line 14, in index
+    logger.info("Identified client's input - " + request.POST.url)
+AttributeError: 'QueryDict' object has no attribute 'url'
+ERROR 2023-04-18 17:33:05,104 55543 "POST /song/ HTTP/1.1" 500 60322
+INFO 2023-04-18 17:33:15,691 55543 /Users/hoivan/Tech/django_youtube_mp3/song/views.py changed, reloading.
+INFO 2023-04-18 17:33:15,958 55563 Watching for file changes with StatReloader
+INFO 2023-04-18 17:33:17,346 55563 "GET /song/ HTTP/1.1" 200 629
+INFO 2023-04-18 17:33:19,451 55563 Client has sent a POST request. Now starts.
+INFO 2023-04-18 17:33:19,452 55563 Identified client's input - https://www.youtube.com/playlist?list=PLTTrQG90PnYTVLyGY_drCBXZAstLaha11
+INFO 2023-04-18 17:33:19,453 55563 Data input is valid.
+INFO 2023-04-18 17:33:19,453 55563 Creating database entry to record this request.
+INFO 2023-04-18 17:33:19,453 55563 Completed - Database entry creation.
+INFO 2023-04-18 17:33:19,453 55563 Cleaning up output dir.
+INFO 2023-04-18 17:33:19,457 55563 Completed - Directory clean up.
+INFO 2023-04-18 17:33:19,457 55563 Downloading all songs in playlist through PyTube services.
+ERROR 2023-04-18 17:33:20,705 55563 local variable 'title' referenced before assignment
+WARNING 2023-04-18 17:33:20,734 55563 Session data corrupted
+ERROR 2023-04-18 17:33:20,748 55563 Internal Server Error: /song/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/hoivan/Tech/django_youtube_mp3/song/views.py", line 25, in index
+    logger.info(download_response["status_code"] + "-" + download_response["content"])
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+ERROR 2023-04-18 17:33:20,748 55563 "POST /song/ HTTP/1.1" 500 60816
+INFO 2023-04-18 17:33:55,668 55583 Watching for file changes with StatReloader
+INFO 2023-04-18 17:34:01,088 55583 Client has sent a POST request. Now starts.
+INFO 2023-04-18 17:34:01,089 55583 Identified client's input - https://www.youtube.com/playlist?list=PLTTrQG90PnYTVLyGY_drCBXZAstLaha11
+INFO 2023-04-18 17:34:01,090 55583 Data input is valid.
+INFO 2023-04-18 17:34:01,090 55583 Creating database entry to record this request.
+INFO 2023-04-18 17:34:01,090 55583 Completed - Database entry creation.
+INFO 2023-04-18 17:34:01,090 55583 Cleaning up output dir.
+INFO 2023-04-18 17:34:01,091 55583 Completed - Directory clean up.
+INFO 2023-04-18 17:34:01,091 55583 Downloading all songs in playlist through PyTube services.
+INFO 2023-04-18 17:34:02,663 55583 Downloading MP3 - 林俊傑_JJ_Lin_交換餘生_No_Turning_Back_Official_Music_Video
+INFO 2023-04-18 17:34:02,663 55583 Exception found - No MP3 version is found. Now downloading MP4 version.
+INFO 2023-04-18 17:34:02,886 55583 MP4 version has been downloaded successfully. Now converting MP4 file to MP3 file.
+INFO 2023-04-18 17:34:07,836 55583 Conversion for 林俊傑_JJ_Lin_交換餘生_No_Turning_Back_Official_Music_Video has been completed successfully.
+INFO 2023-04-18 17:34:15,695 55583 Downloading MP3 - 陳奕迅_與我常在
+INFO 2023-04-18 17:34:15,695 55583 Exception found - No MP3 version is found. Now downloading MP4 version.
+INFO 2023-04-18 17:34:16,033 55583 MP4 version has been downloaded successfully. Now converting MP4 file to MP3 file.
+INFO 2023-04-18 17:34:18,697 55583 Conversion for 陳奕迅_與我常在 has been completed successfully.
+INFO 2023-04-18 17:34:18,698 55583 Completed - Download
+INFO 2023-04-18 17:34:18,698 55583 Compressing output dir for user to download as HTTP request
+INFO 2023-04-18 17:34:19,001 55583 Completed - Compressing output file.
+INFO 2023-04-18 17:34:19,026 55583 200 - The Youtube Playlist has been downloaded and compressed in server host directory now.
+INFO 2023-04-18 17:34:19,026 55583 Location of zip file - /Users/hoivan/Tech/django_youtube_mp3/song/output/TubeHubPlaylist.zip
+INFO 2023-04-18 17:34:19,026 55583 Server will now return the File Response to Client to download compressed dir.
+INFO 2023-04-18 17:34:19,110 55583 "POST /song/ HTTP/1.1" 200 9643282

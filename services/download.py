@@ -5,36 +5,39 @@ import os
 import shutil
 import re
 import glob
-
+import logging
+logger = logging.getLogger('django')
 def download(form):
     try:
         # 1. Update DB record
         print("Step 1 - DB entry")
+        logger.info("Creating database entry to record this request.")
         playlist = form.save(commit=False)
         p = Playlist(playlist.url)
-        print("Step 1 - Completed")
+        logger.info("Completed - Database entry creation.")
 
-        # 2. Create a new directory
-        print("Step 2 - Directory creation now")
+        # 2. Clean up dir
+        logger.info("Cleaning up output dir.")
         output_path = directory_cleanup()
         zip_dir_path = output_path + "TubeHubPlaylist"
-        print("Step 2 - Completed")
+        logger.info("Completed - Directory clean up.")
 
         # 3. Donwload songs from playlist to new
-        print("Step 3 - Download playlist")
+        logger.info("Downloading all songs in playlist through PyTube services.")
         download_service(p, zip_dir_path)
-        print("Step 3 - Completed")
+        logger.info("Completed - Download")
 
         # 4. Zip the directory
-        print("Step 4 - Compress")
+        logger.info("Compressing output dir for user to download as HTTP request")
         shutil.make_archive(zip_dir_path, 'zip', zip_dir_path)
         output_zip = zip_dir_path + ".zip"
-        print("Step 4 - Completed")
+        logger.info("Completed - Compressing output file.")
 
         # 5. Return Zip File and pass to View
         return return_process(playlist, 200, output_zip)
-    except KeyError:
-        return return_process(playlist, 404, "Error - Playlist not found")
+    except Exception as e:
+        logger.error(e)
+        return return_process(playlist, 404, e)
 
 def download_service(p,output_path):
     for video in p.videos:
@@ -42,27 +45,22 @@ def download_service(p,output_path):
             st = video.streams.get_audio_only(subtype='mp3')
             title = re.sub('[^0-9a-zA-Z\u4e00-\u9fff]+', '_', video.title)
             full_file_path = output_path + "/" + title
-            print("now attemp to download mp3")
-            print(full_file_path + ".mp3")
+            logger.info("Downloading MP3 - " + title)
             try:
                 st.download(filename=full_file_path + ".mp3")
             except Exception as e:
                 try:
+                    logger.info("Exception found - No MP3 version is found. Now downloading MP4 version.")
                     st = video.streams.get_audio_only(subtype='mp4')
-                    print("Exception found - try to download mp4")
-                    print(full_file_path)
                     st.download(filename=full_file_path + ".mp4")
-                    print("mp4 has been downloaded successfully.")
-                    print("Now proceed to convert MP4 to MP3")
+                    logger.info("MP4 version has been downloaded successfully. Now converting MP4 file to MP3 file.")
                     mp4_to_mp3(full_file_path)
-                    print("Download MP4 Successfully - ")
+                    logger.info("Conversion for " + title + " has been completed successfully.")
                 except Exception as e2:
-                    print("Failure - " + title)
+                    logger.info("Unexpected Error found. Will skip this song - " + title)
                     continue
-            # video.streams.first().download()
         except Exception as e3:
-            print(e3)
-            # print("Failure - " + title)
+            logger.info("Unexpected Error found. Will skip this song - " + title)
             continue
 def mp4_to_mp3(title):
     try:
