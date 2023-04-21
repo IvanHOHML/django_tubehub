@@ -11,6 +11,7 @@ pipeline {
         stage('Test'){
             steps{
                 echo "Testing now ..."
+                sh 'python3 manage.py test song.tests.SongTests'
             }
         }
         stage('Deploy'){
