@@ -3,15 +3,21 @@
     max-width: 100%;
     max-height:100%;
     padding-left: 64px;
+    overflow: hidden;
 }
 
 .header {
     text-align: left;
 }
 
-h1 {
-    font-size: 48px;
+#logo {
+    border-radius:24px;
+    height: 128px;
+    width: auto;
     padding-top: 128px;
+}
+h1 {
+    font-size: 4vw;
     margin-bottom: 24px;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight:800;
@@ -20,7 +26,7 @@ h1 {
 }
 
 p {
-    font-size: 16px;
+    font-size: 1.5vw;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight:200;
     margin:6px;
@@ -34,7 +40,7 @@ p {
 
 input[type=text] {
     width: 512px;
-    font-size: 16px;
+    font-size: 1.5vw;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight:200;
     margin-right: 12px;
@@ -56,10 +62,9 @@ button[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    width: 108px;
-    font-size: 12px;
+    width: 128px;
     transition: background-color 0.3s ease;
-    font-size: 16px;
+    font-size: 1.5vw;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight:800;
 }
@@ -79,49 +84,75 @@ button[type=submit]:hover {
     color: #808080;
 }
 
-/* Device-specific styles */
-@media only screen and (max-width: 600px) {
-    .container {
-        padding: 10px;
-    }
-
-    h1 {
-        font-size: 28px;
-    }
-
-    p {
-        font-size: 16px;
-    }
-
-    label {
-        font-size: 16px;
-    }
-
-    input[type=email] {
-        font-size: 12px;
-        padding: 8px;
-    }
-
-    button[type=submit] {
-        font-size: 16px;
-        padding: 8px;
-    }
-
-    .footer p {
-        font-size: 12px;
-    }
-}
-
-/* Common styles for all devices */
 body {
     background-color: #F4F4F4;
     font-family: Arial, sans-serif;
     background: url(../media/Image.jpg);
-    background-size: 120%;
+    background-size: 130%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position:left center
 }
+
+/* Device-specific styles */
+/* Styles for devices with a maximum width of 600px */
+@media only screen and (max-width: 600px) {
+    .root {
+        background:#e5eef5;
+    }
+    .container {
+        padding: 0 16px;
+    }
+
+    .header {
+         text-align: center;
+    }
+
+    #logo {
+        text-align: center;
+        padding-top: 0px;
+        margin-top:48px;
+        height: 256px;
+        border-width: 12px;
+        border-radius: 36px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 32px;
+        margin-bottom: 16px;
+        font-size: 5vw;
+    }
+
+    p {
+        font-size: 2vw;
+    }
+
+    .form-group {
+        display: flex;
+        text-align: center;
+    }
+
+    input[type=text] {
+        width: 75%;
+        text-align: center;
+    }
+
+    button[type=submit] {
+        width: 25%;
+        text-align: center;
+    }
+
+    body {
+        background-color: #3D441E;
+        font-family: Arial, sans-serif;
+        background: None;
+    }
+}
+
+/* Common styles for all devices */
+
 
 /* Global link styles */
 a {

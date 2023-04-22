@@ -38,7 +38,17 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'responsive'
 ]
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.core.context_processors.request',
+    'responsive.context_processors.device',
+)
+
+MIDDLEWARE_CLASSES = (
+    'responsive.middleware.ResponsiveMiddleware',
+)
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
